@@ -36,7 +36,7 @@ h1 {
   font-size: 58px;
   color: #22aff1;
   text-transform: uppercase;
-  margin: 0;
+  margin: 33px 0 2px;
   & span {
     color: #fff;
     position: relative;
@@ -62,7 +62,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 6px 23px;
   &__menu {
     background-color: rgb(0, 174, 255);
@@ -71,11 +71,13 @@ h1 {
   &__feedback {
     background-color: rgb(231, 61, 189);
     box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
+    padding: 6px 43px;
   }
   &__price {
     background-color: rgb(231, 61, 189);
     box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
     font-size: 23px;
+    padding: 13px 60px;
   }
 }
 
@@ -85,7 +87,13 @@ h1 {
   padding: 30px 0;
 }
 
+.header {
+  background: url(../img/bg-waves-circle.png) 541px 0 no-repeat;
+}
+
 .topper-list {
+  margin-left: -37px;
+  margin-top: 3px;
   &__items {
     display: flex;
   }
@@ -95,7 +103,7 @@ h1 {
   }
   &__span {
     color: #c7c7c7;
-    padding: 0 18px;
+    padding: 0 11px 0 16px;
   }
 }
 
@@ -109,11 +117,13 @@ h1 {
       font-weight: bold;
     }
   }
-  &__block{
+  &__block {
     display: flex;
     align-items: flex-start;
+    position: relative;
   }
   &__slogan {
+    padding: 41px 0 29px;
     & p {
       font-family: 'Intro', sans-serif;
       font-size: 45px;
@@ -129,7 +139,11 @@ h1 {
       }
     }
   }
-
+  &__img {
+    position: absolute;
+    right: -32px;
+    top: -221px;
+  }
 }
 
 .price-list {
@@ -140,6 +154,9 @@ h1 {
   &__item {
     display: flex;
     margin-bottom: 1px;
+    & .old{
+
+    }
   }
   & p {
     font-family: 'Roboto', sans-serif;
@@ -148,13 +165,13 @@ h1 {
     background-color: rgb(0, 174, 255);
     border-radius: 20px;
     width: 285px;
-    text-align: center;
-    padding: 5px 10px;
-    &:nth-child(even){
+    padding: 5px 0 4px 20px;
+    &:nth-child(even) {
       background-color: rgb(231, 61, 189);
       width: auto;
-      padding-left: 14px;
-      padding-right: 14px;
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
       position: relative;
       left: -17px;
     }
