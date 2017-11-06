@@ -5,3 +5,71 @@
   clear: both;
 }
 
+@font-face {
+  font-family: Intro;
+  src: url(../fonts/Intro.ttf);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #22aff1;
+}
+
+p {
+  margin: 0;
+}
+.h1{
+  margin: 0;
+  font-size: 58px;
+  color: #22aff1;
+}
+.btn {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 23px;
+  &__menu {
+    background-color: rgb(0, 174, 255);
+    box-shadow: 0 10px 20px 0 rgba(0, 174, 255, 0.3);
+  }
+  &__feedback {
+    background-color: rgb(231, 61, 189);
+    box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
+  }
+}
+
+.topper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.topper-list {
+  &__items {
+    display: flex;
+  }
+  &__link {
+    font-family: 'Intro', sans-serif;
+    font-size: 20px;
+  }
+  &__span {
+    color: #c7c7c7;
+    padding: 0 18px;
+  }
+}
