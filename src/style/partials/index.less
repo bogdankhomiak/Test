@@ -30,11 +30,31 @@ a {
 p {
   margin: 0;
 }
-.h1{
-  margin: 0;
+
+h1 {
+  font-family: 'Intro', sans-serif;
   font-size: 58px;
   color: #22aff1;
+  text-transform: uppercase;
+  margin: 0;
+  & span {
+    color: #fff;
+    position: relative;
+    padding: 0 12px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 221px;
+      height: 115px;
+      background: url("../img/bg-text-led.png") no-repeat;
+      top: -21px;
+      left: -50px;
+      z-index: -1;
+    }
+  }
 }
+
 .btn {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
@@ -51,6 +71,11 @@ p {
   &__feedback {
     background-color: rgb(231, 61, 189);
     box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
+  }
+  &__price {
+    background-color: rgb(231, 61, 189);
+    box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
+    font-size: 23px;
   }
 }
 
@@ -71,5 +96,33 @@ p {
   &__span {
     color: #c7c7c7;
     padding: 0 18px;
+  }
+}
+
+.header-main {
+  & p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444444;
+    width: 550px;
+    & span {
+      font-weight: bold;
+    }
+  }
+  &__slogan {
+    & p {
+      font-family: 'Intro', sans-serif;
+      font-size: 45px;
+      color: #e73dbd;
+      line-height: 37px;
+      width: 733px;
+      padding-left: 50px;
+      & span {
+        display: block;
+        font-weight: normal;
+        font-size: 33px;
+        text-align: right;
+      }
+    }
   }
 }
