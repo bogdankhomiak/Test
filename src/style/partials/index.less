@@ -5,10 +5,6 @@
   clear: both;
 }
 
-@font-face {
-  font-family: Intro;
-  src: url(../fonts/Intro.ttf);
-}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -55,6 +51,29 @@ h1 {
   }
 }
 
+h2 {
+  font-family: 'Intro', sans-serif;
+  font-size: 65px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: right;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 75px;
+    height: 2px;
+    background: #eaedf2;
+    top: 50px;
+    right: 300px;
+  }
+  & span {
+    font-size: 37px;
+    display: block;
+  }
+}
+
 .btn {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
@@ -89,6 +108,7 @@ h1 {
 
 .header {
   background: url(../img/bg-waves-circle.png) 541px 0 no-repeat;
+  height: 740px;
 }
 
 .topper-list {
@@ -154,7 +174,7 @@ h1 {
   &__item {
     display: flex;
     margin-bottom: 1px;
-    & .old{
+    & .old {
 
     }
   }
@@ -174,6 +194,61 @@ h1 {
       padding-right: 15px;
       position: relative;
       left: -17px;
+    }
+  }
+}
+
+.advantages {
+  background: url("../img/bg-2.png") no-repeat;
+  margin-top: -108px;
+  position: relative;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    margin-left: 300px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    width: 300px;
+    position: relative;
+    & span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 26px;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 21px;
+        height: 2px;
+        background: #eaedf2;
+        top: 15px;
+        left: -30px;
+      }
+      &.advantages__item-number {
+        font-family: 'Intro', sans-serif;
+        font-size: 150px;
+        color: #7dc3ff;
+        position: absolute;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    & p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
     }
   }
 }
