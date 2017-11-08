@@ -18,7 +18,7 @@ CountdownTimer.prototype={
   if( ( this.tl - today ) > 0 ){
    timer += '<span class="number-wrapper"><div class="caption">дней</div><span class="number day">'+day+'</span></span>';
    timer += '<span class="number-wrapper"><div class="caption">часов</div><span class="number hour">'+hour+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="caption">минут</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">секунд</div><span class="number sec">'+this.addZero(sec)+'</span></span>';
+   timer += '<span class="number-wrapper"><div class="caption">минут</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">секунд</div><span class="number sec">'+this.addZero(sec)+'</span></span><p class="countdown__txt">Осталось до конца акции</p>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );
   }else{
