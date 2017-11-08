@@ -20,7 +20,7 @@
   }
 
   .header {
-    background-position: -464px;
+    background-position: -460px 0;
   }
 
   .header-main {
@@ -83,9 +83,20 @@
   }
 }
 
-@media (max-width: 1191px) {
+@media (max-width: 991px) {
   h1 {
     font-size: 50px;
+  }
+
+  h2 {
+    font-size: 55px;
+    &:after {
+      top: 39px;
+      right: 277px;
+    }
+    & span {
+      font-size: 28px;
+    }
   }
 
   .topper {
@@ -130,11 +141,14 @@
   }
 
   .countdown {
+    width: 385px;
+    font-size: 50px;
     & p {
       &.countdown {
         &__txt {
-          top: 50px;
-          left: 24px;
+          top: 80px;
+          left: 50px;
+          width: auto;
         }
       }
     }
@@ -144,10 +158,176 @@
     background: #00aeff;
     margin-top: 0;
     padding-top: 0;
+    &__list {
+      margin-left: 95px;
+    }
     &__item {
       width: auto;
+      &_first {
+        order: 1;
+      }
+      &_second {
+        margin-top: 0;
+        order: 2;
+      }
       &_third {
         margin-top: 0;
+        order: 3;
+      }
+      &_fourth {
+        order: 4;
+      }
+      & span {
+        &.advantages {
+          &__item-number {
+            left: -100px;
+          }
+        }
+      }
+    }
+    &__img {
+      top: 13px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 18px;
+    & span {
+      display: block;
+      margin: 10px 0 18px;
+      &:after {
+        top: -30px;
+        left: 27px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: normal;
+    & span {
+      font-size: 20px;
+      display: inline;
+      letter-spacing: normal;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    &__price {
+      font-size: 18px;
+    }
+  }
+
+  .topper {
+    flex-wrap: wrap;
+    padding: 10px 0 0;
+  }
+
+  .topper-list {
+    &__items {
+      line-height: 31px;
+      justify-content: center;
+      margin: 15px 0;
+    }
+  }
+
+  .header-main {
+    & p {
+      width: auto;
+      font-size: 16px;
+      margin-top: 13px;
+      padding: 0;
+    }
+    &__slogan {
+      padding: 0;
+      & p {
+        font-size: 25px;
+        width: auto;
+        & span {
+          font-size: 17px;
+          text-align: center;
+        }
+      }
+    }
+    &__img {
+      position: static;
+      width: auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  .price {
+    width: auto;
+  }
+
+  .price-list {
+    & p {
+      font-size: 14px;
+      text-align: center;
+      padding: 5px 20px;
+      &:nth-child(even) {
+        position: static;
+        margin-top: 0;
+      }
+    }
+    &__item {
+      display: block;
+    }
+  }
+
+  .countdown {
+    width: auto;
+    font-size: 40px;
+    & p {
+      &.countdown {
+        &__txt {
+          top: 52px;
+          left: 6px;
+        }
+      }
+    }
+  }
+
+  .number {
+    &:after {
+      content: ":";
+      display: block;
+      font-size: 32px;
+      color: #444444;
+      position: absolute;
+      top: 4px;
+      left: -5px;
+    }
+  }
+
+  .advantages {
+    &__img {
+      display: none;
+    }
+    &__list {
+      margin-left: 55px;
+    }
+    &__item {
+      & span {
+        font-size: 18px;
+        &.advantages {
+          &__item-number {
+            font-size: 100px;
+            top: 0;
+            left: -63px;
+            line-height: 83px;
+          }
+        }
       }
     }
   }
