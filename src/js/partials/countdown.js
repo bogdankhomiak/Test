@@ -16,9 +16,9 @@ CountdownTimer.prototype={
   var me=this;
 
   if( ( this.tl - today ) > 0 ){
-   timer += '<span class="number-wrapper"><div class="caption">дней</div><span class="number day">'+day+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="caption">часов</div><span class="number hour">'+hour+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="caption">минут</div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption">секунд</div><span class="number sec">'+this.addZero(sec)+'</span></span><p class="countdown__txt">Осталось до конца акции</p>';
+   timer += '<span class="countdown__number-wrapper"><div class="countdown__caption">дней</div><span class="countdown__number day">'+day+'</span></span>';
+   timer += '<span class="countdown__number-wrapper"><div class="countdown__caption">часов</div><span class="countdown__number hour">'+hour+'</span></span>';
+   timer += '<span class="countdown__number-wrapper"><div class="countdown__caption">минут</div><span class="countdown__number min">'+this.addZero(min)+'</span></span><span class="countdown__number-wrapper"><div class="countdown__caption">секунд</div><span class="countdown__number sec">'+this.addZero(sec)+'</span></span><p class="countdown__txt">Осталось до конца акции</p>';
    this.elem.innerHTML = timer;
    tid = setTimeout( function(){me.countDown();},10 );
   }else{
@@ -33,7 +33,7 @@ function CDT(){
  var tl = new Date('2017/11/13 00:00:00');
 
  // You can add time's up message here
- var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Акция закончилась!</span></span>');
+ var timer = new CountdownTimer('CDT',tl,'<span class="countdown__number-wrapper"><span class="countdown__number end">Акция закончилась!</span></span>');
  timer.countDown();
 }
 window.onload=function(){

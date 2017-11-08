@@ -20,6 +20,10 @@ ul {
 a {
   text-decoration: none;
   color: #22aff1;
+  transition: 0.2s;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
 }
 
 p {
@@ -87,15 +91,22 @@ h2 {
   border: none;
   border-radius: 40px;
   padding: 6px 23px;
+  transition: 0.2s;
   &__menu {
     background-color: rgb(0, 174, 255);
     box-shadow: 0 10px 20px 0 rgba(0, 174, 255, 0.3);
+    &:hover {
+      background-color: #0089ff;
+    }
   }
   &__feedback {
     background-color: rgb(231, 61, 189);
     box-shadow: 0 10px 20px 0 rgba(231, 61, 189, 0.45);
     padding: 6px 38px;
     letter-spacing: 0.6px;
+    &:hover {
+      background-color: #de2ab2;
+    }
   }
   &__price {
     background-color: rgb(231, 61, 189);
@@ -104,6 +115,11 @@ h2 {
     padding: 13px 49px;
     letter-spacing: 1.3px;
     font-weight: normal;
+    z-index: 1;
+    position: relative;
+    &:hover {
+      background-color: #de2ab2;
+    }
   }
 }
 
